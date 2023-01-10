@@ -6,12 +6,7 @@ function checkLoop() {
     const chaosRes = document.getElementById("chaos").value;
 
     const ringCount1 =  document.getElementById("ringCount1").checked;
-    let ringMultiplier;
-    if(ringCount1==true) {
-        ringMultiplier = 1;
-    } else {
-        ringMultiplier = 2;
-    }
+    let ringMultiplier = ringCount1==true ? 1 : 2;
 
     const isDivergent = document.getElementById("typeDivergent").checked
     const gemQuality = document.getElementById("CWDTQuality").value;
